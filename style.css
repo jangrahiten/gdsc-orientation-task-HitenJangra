@@ -1,0 +1,126 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   background-color: black;
+   overflow: hidden;
+}
+.fraunces-text {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-variation-settings: "SOFT" 0, "WONK" 1;
+    color: white;
+    font-size: 5em;
+}
+
+.honk-text {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 50;
+    font-size: 5em;
+}
+:root {
+   --color-TL: #f42d55;
+   --color-TCU: #fae1d7;
+   --color-TCU: #fae1d7;
+   --color-TR: #b9b4fe;
+   --color-BR: #fae1d7;
+}
+
+.main {
+   height: 100vh;
+   width: 100vw;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 1em;
+}
+.top {
+   /* align-items: center; */
+   justify-content: center;
+   height: 50vh;
+   width: 90vw;
+   display: flex;
+   gap: 1em;
+}
+.top .left {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-TL);
+    width: 18vw;
+    display: flex;
+    border-radius: 10% 0 0 0;
+}
+.top .left img, .top .right img{
+    height: 10vh;
+}
+.top .right {
+   align-items: center;
+   justify-content: center;
+   width: 18vw;
+   background-color: var(--color-TR);
+   display: flex;
+   border-radius: 0 10% 0 0;
+
+}
+.top .centre {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.top .centre-up {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 25vh;
+   background-color: var(--color-TCU);
+}
+.top .centre-down {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 25vh;
+}
+.top .centre img {
+   height: 25vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.bottom{
+    gap: 1em;
+    height: 40vh;
+    width: 64.5vw;
+    justify-content: center;
+}
+.bottom-l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-l img{
+    border-radius: 0 0 0 10%;
+    height: 40vh;
+}
+.bottom-r{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-BR);
+    color: black;
+    border-radius: 0 0 10% 0;
+
+}
+
+.invert{
+    filter: invert();
+}
+
